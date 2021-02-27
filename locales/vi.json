@@ -1,0 +1,19 @@
+{
+	"pressStartTelegram": "Ấn lệnh Start để lấy mã xác nhận",
+	"yourCodeIs": "Mã của bạn là {{value}}",
+	"yourVerifyCode": "Mã OTP Coin98: {code}",
+	"receiveCoin": "Bạn đã nhận được {{coin}} từ {{name}}",
+	"kudoSend": "{{name}} Kudos tới {{post}} của bạn {{coin}}",
+	"newReward": "{{name}} đã có mặt trên cửa hàng",
+	"updateReward": "{{name}} đã cập nhật thông tin",
+	"newLiked": "{{name}} vừa thích {{post}} của bạn",
+	"alreadyLinkTele": "Telegram của bạn đã được liên kết",
+	"newComment": "{{name}} vừa bình luận bài viết của bạn",
+	"newShip": "{{name}} của bạn đã được chuyển đi",
+	"newContribute": "Đóng góp ý tưởng mới từ {{name}}",
+	"newSwap": "{{name}} đã Swap {{coin}} sang {{coin2}}",
+	"refReceived": "Bạn được tặng {{coin}} bởi giới thiệu thành công {{name}}",
+	"refIntroduced": "Tặng Ref: Giới thiệu {{name}}",
+	"refBy": "Tặng Ref: Giới thiệu bởi {{name}}",
+	"refMission": "Thưởng giới thiệu từ {{name}} - Nhiệm vụ {{mission}}"
+}

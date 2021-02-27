@@ -1,0 +1,32 @@
+{
+  "parser": "babel-eslint",
+  "extends": [
+    "eslint:recommended",
+    "standard"
+  ],
+  "env": {
+    "jest": true
+  },
+  "plugins": [
+    "flowtype-errors"
+  ],
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
+  "rules": {
+    "no-undef": "error",
+    "indent": [
+      2,
+      2
+    ]
+  },
+  "globals": {
+    "fetch": true,
+    "enquire": true,
+    "FontFaceObserver": true,
+    "imagesloaded": true,
+    "Modernizr": true
+  }
+}

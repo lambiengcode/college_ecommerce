@@ -1,0 +1,19 @@
+{
+  "pressStartTelegram": "Press Start command to get verification code",
+  "yourCodeIs": "Your code is {{code}}",
+  "yourVerifyCode": "Coin98 OTP code: {code}",
+  "receiveCoin": "You received {{coin}} from {{name}}",
+  "kudoSend": "{{name}} Kudos to your {{post}} {{coin}}",
+  "newReward": "{{name}} is now available on Reward Store",
+  "updateReward": "{{name}} has updated information",
+  "newLiked": "{{name}} liked your {{post}}",
+  "alreadyLinkTele": "Your Telegram account already linked",
+  "newComment": "{{name}} commented on your post",
+  "newShip": "Your {{name}} has been shipped",
+  "newContribute": "Contribute new ideas from {{name}}",
+  "newSwap": "{{name}} has swapped {{coin}} to {{coin2}}",
+  "refReceived": "You received {{coin}} for successfully introducing {{name}}",
+  "refIntroduced": "Ref Bonus: Introduced {{name}}",
+  "refBy": "Ref Bonus: Introduced by {{name}}",
+  "refMission": "Referral Bonus by {{name}} - {{mission}} Earn Mission"
+}

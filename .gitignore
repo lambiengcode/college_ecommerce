@@ -1,0 +1,9 @@
+package-lock.json
+yarn-error.log
+dist/
+.env
+db.text
+runUpdate.sh
+updateCode.sh
+
+node_modules
