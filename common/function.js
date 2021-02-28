@@ -9,6 +9,7 @@ import { sendGridId, kudoType } from './constants'
 import { isNull, isUndefined } from 'util'
 import numeral from 'numbro'
 const Cron = require('cron-converter')
+const SHA256 = require("crypto-js/sha256")
 
 export const sendEmail = (to, data, locale = 'resetPassword') => {
   return new Promise(async (resolve, reject) => {
@@ -94,6 +95,10 @@ export const convertPasswordHMAC256Security = (password) => {
   var hashPassword = crypto.HmacSHA256(password, '0xaeb0325a6789f597b4f7c2c4dcb36b1ba4232384ffaf7b24670b71dafc564cec')
   var hexhash = crypto.enc.Hex.stringify(hashPassword)
   return hexhash
+}
+
+export const calculateHash = (email, password, nonce) => {
+  return SHA256(email + password + nonce).toString()
 }
 
 export const getLength = (value) => {

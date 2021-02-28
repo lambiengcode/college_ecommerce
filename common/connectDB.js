@@ -10,7 +10,7 @@ export const connectDatabase = () => {
     useCreateIndex: true
   })
     .then(async () => {
-      console.log('dummy Database connection created')
+      console.log('EC2 Database connection created')
     }).catch((err) => {
       console.log(err)
     })

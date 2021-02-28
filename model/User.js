@@ -11,6 +11,6 @@ export default {
   status: { type: String, default: statusActive.active },
   password: defaultModel.string,
   role: { type: String, default: userRole.member },
-  provider: { type: String, default: providerType.null }
-
+  provider: { type: String, default: providerType.null },
+  nonce: defaultModel.number,
 }
