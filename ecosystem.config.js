@@ -1,7 +1,7 @@
 module.exports = {
     apps: [
       {
-        name: 'apec',
+        name: 'ec2021',
         script: 'dist/index.js',
         args: 'index.js',
         wait_ready: true,
