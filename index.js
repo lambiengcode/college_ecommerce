@@ -7,6 +7,7 @@ import helmet from 'helmet'
 import cookieParser from 'cookie-parser'
 import { connectDatabase } from './common/connectDB'
 // Routes
+import Auth from './routes/auth'
 import User from './routes/user'
 import Test from './routes/test'
 
@@ -27,8 +28,10 @@ app.get('/api/info', (req, res) => {
   res.json('welcome to test !')
 })
 
+app.use('/auth', Auth)
 app.use('/api/user', User)
 app.use('/api/test', Test)
+
 // error handler
 app.use(function (err, req, res, next) {
   if (err.isBoom) {

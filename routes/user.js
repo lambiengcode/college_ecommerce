@@ -13,7 +13,7 @@ router.post('/reg/fb', UserServices.postLoginFacebook)
 router.post('/reg/gg', UserServices.postLoginGoogle)
 router.post('/login', UserServices.loginPassword)
 
-router.put('/pwChange', UserServices.changePassword)
+// router.put('/pwChange', UserServices.changePassword)
 router.put('/', UserServices.update)
 router.delete('/', UserServices.delete)
 
