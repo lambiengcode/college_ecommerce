@@ -27,7 +27,6 @@ export default class AuthServices {
           password,
           resultLogin.nonce
         );
-        console.log(hashPassword, resultLogin.nonce, emailFormat, password)
         if (resultLogin.password == hashPassword) {
           const jwtToken =
             resultLogin == null ? "" : generateToken(emailFormat);
@@ -103,7 +102,6 @@ export default class AuthServices {
               );
             }
 
-            console.log(newHashPassword, nonce, createdUser, newPassword)
             var resultChange = await User.findOneAndUpdate(
               {
                 email: createdUser,
@@ -136,7 +134,6 @@ export default class AuthServices {
   static async onCreateUser(response) {
     return new Promise(async (resolve, reject) => {
       const { id, picture, password, email, isLogin, isLoginAdmin } = response;
-      console.log(password);
       const emailFormat = lowerCase(email);
 
       const oldUser = password

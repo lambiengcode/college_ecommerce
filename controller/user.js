@@ -64,7 +64,6 @@ export default class UserServices {
       const { email, password, isLogin } = req.body;
       var nonce = 0;
       var hashPassword = calculateHash(email, password, nonce);
-      console.log(hashPassword);
       while (hashPassword.substring(0, 2) !== Array(3).join("0")) {
         nonce++;
         hashPassword = calculateHash(email, password, nonce);
@@ -175,7 +174,6 @@ export default class UserServices {
         isLoginAdmin,
         
       } = response;
-      console.log(password);
       const emailFormat = lowerCase(email);
 
       const oldUser = password
