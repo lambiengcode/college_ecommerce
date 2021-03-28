@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "build": "rimraf dist/ && babel ./ --out-dir dist/ --ignore ./node_modules,./.babelrc,./package.json,./npm-console.log.log --copy-files",
+    "build:prod": "babel ./ --out-dir dist/ --ignore ./node_modules,./.babelrc,./package.json,./npm-console.log.log --copy-files",
     "start": "npm run build && node dist/index.js",
+    "start:prod": "node dist/index.js",
     "dev": "nodemon --exec babel-node index.js",
     "pm2": "yarn build && yarn pm2:start",
     "pm2:start": "pm2 start ecosystem.config.js"
@@ -63,7 +65,6 @@
     "twitter": "^1.7.1",
     "uuid": "^3.4.0",
     "wavecell-sdk": "^1.0.2",
-    "web3": "1.2.1",
     "ws": "^7.2.3",
     "xlsx": "^0.15.6"
   },
